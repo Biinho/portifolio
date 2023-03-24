@@ -1,0 +1,139 @@
+/* Menu Cabeçalho */
+.menu{
+	position: fixed;
+	width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul {
+    background-color: rgb(42, 9, 9);
+}
+
+.menu ul li {
+    /* display: inline; */
+    position: relative;
+}
+
+.menu ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.2s ease; 
+}
+
+/*sub menu*/
+.menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul ul {
+    width: 200px
+}
+
+.menu ul ul li a {
+    display: block;
+}
+
+.menu-imagem{
+	display: inline;
+	width: 30px;
+	height: auto;
+	border-radius: 20px;
+}
+
+/*Página inicial*/
+body{
+    background: #262626;
+}
+
+.bin-container{
+    position: relative;
+    top: 42vh;
+}
+
+.bin-inicio{
+    position: relative;
+    top: 40%;
+    padding-left: 60px;
+    margin: 10px;
+}
+
+.bin-inicio #bin-nome{
+    font-family: serif;
+    color: white;
+    font-weight: bold;
+    font-size: 53px;
+}
+
+.bin-inicio h2{
+    padding-top: 15px;
+    color: white;
+    font-size: 25px;
+}
+
+.bin-inicio span{
+    border-bottom: solid 2px rgb(123, 0, 255);
+    padding-bottom: 5px;
+}
+
+#bin-ref{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#bin-ref:hover{
+    color: rgb(123, 0, 255);
+    cursor: pointer;
+}
+
+
+#bin-menu{
+    /* position: relative; */
+    display: flex;
+    /* top: 42vh;
+    left: 8vh; */
+    background: none;
+}
+
+#bin-menu a::after {
+    margin: 2px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(123, 0, 255);
+    transition: width .3s;
+}
+
+#bin-menu a:hover{
+    color: #fff;
+}
+
+#bin-menu a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+#bin-redes--sociais{
+    position: relative;
+    top: 10vh;
+}
+/* .menu ul li a:hover {
+    border-bottom: solid 3px rgb(123, 0, 255);  
+    /* background-color: #e93211; 
+	transition: 0.7s;
+    transform-origin:  0% 50%; 
+} */
