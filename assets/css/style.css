@@ -95,7 +95,7 @@
 .menu{
 	position: fixed;
 	width: 100%;
-    background: #0000004f;
+    /* background: #0000004f; */
 }
 
 .menu ul {
@@ -150,10 +150,6 @@
 }
 
 /*Página inicial*/
-body{
-    background: #262626;
-}
-
 .bin-container{
     /* position: relative;
     top: 42vh; 
@@ -213,15 +209,12 @@ body{
 #bin-inicio:hover, #bin-sobre:hover, #bin-resumo:hover, #bin-portifolio:hover, #bin-contato:hover{
     font-size: 35px;
     transition: 0.3s;
+    cursor: crosshair;
 }
 
 #bin-titulo{
     font-weight: bold;
     font-size: 50px;
-}
-
-.active{
-    color: #faf;
 }
 
 #bin-menu a::after {
@@ -260,6 +253,28 @@ body{
 }
 
 #bin-redes--sociais div{
+    margin: 10px;
+}
+
+#bin-redes--sociais2{
+    position: fixed;
+    display: flex;
+    font-size: 24px;
+    position: fixed; 
+    right: 35px; 
+    /* top: 0; */
+    /* top: 6vh; */
+}
+
+#bin-redes--sociais2 a{
+    text-decoration: none;
+    color: #a7a7a7; 
+    border: none;
+    padding: 10px;
+    transition:0.3s;
+}
+
+#bin-redes--sociais2 div{
     margin: 10px;
 }
 
