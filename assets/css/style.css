@@ -239,8 +239,8 @@
 #bin-redes--sociais{
     position: relative;
     display: flex;
-    font-size: 24px;
-    top: 6vh;
+    font-size: 15px;
+    top: 10vh;
 }
 
 #bin-redes--sociais a{
@@ -314,16 +314,6 @@
 	transition: 0.7s;
     transform-origin:  0% 50%; 
 } */
-
-
-
-
-
-
-
-
-
-
 
 
 /*===================================================================*/
