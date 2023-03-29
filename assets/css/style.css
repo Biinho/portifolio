@@ -196,7 +196,6 @@
     cursor: pointer;
 }
 
-
 #bin-menu{
     display: flex;
     background: none;
@@ -306,6 +305,12 @@
     border: none;
     font-size: 40px;
     color: #25D366;
+}
+
+/* Section Conteudos */
+
+.bin-conteudo{
+    background: #000000ad;
 }
 
 /* .menu ul li a:hover {
