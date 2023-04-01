@@ -92,7 +92,6 @@
 /* body {
 	font-family: 'Montserrat', sans-serif;
 }
-
 .caixa {
 	font-family: 'DynaPuff', cursive;
 } */
@@ -163,7 +162,7 @@
     display: block;
 }
 
-/**/
+/* Sobre */
 
 #bin-inicio, #bin-sobre, #bin-resumo, #bin-portifolio, #bin-contato{
     font-size: 20px;
@@ -176,6 +175,44 @@
     border-bottom: solid 2px purple;
 }
 
+.bin-info li{
+    font-weight: bold;
+    color: #fff;
+    margin: 15px;
+}
+
+.bin-info a{
+    color: #8844ff;
+    text-decoration: none;
+}
+
+.bin-tot-info{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.bin-tot-info div{
+    flex: 1;
+    background: #8844ff;
+    margin: 15px;
+}
+
+.bin-tot-info div div{
+    
+}
+
+/* .bin-tot-info div{
+    background: rgba(255,255,255,0.08);
+    margin: 15px;
+    flex: 1;
+} */
+
+.bin-tot-info h1{
+    font-size: 36px;
+    font-weight: bold;
+}
 /*Conteudo*/
 
 .bin-conteudo{
@@ -200,8 +237,10 @@
 
 #bin-sub-m-titulo{
     color: #a7a7a7;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 #bin-m-titulo::after{
@@ -209,7 +248,7 @@
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #673AB7;
+    background: #8844ff;
     margin: 4px 10px;
 }
 
@@ -218,7 +257,7 @@
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #673AB7;
+    background: #8844ff;
     margin: 4px 10px;
 }
 
@@ -233,7 +272,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: #673AB7;
+    color: #8844ff;
     padding-bottom: 10px;
 }
 .bin-layout p {
