@@ -1,4 +1,4 @@
-.bg {
+.bin-bg {
     background: url(../../assets/img/galaxia.jpg) no-repeat;
     background-size: cover;
     height: 100%;
@@ -8,7 +8,7 @@
     left: 0;
     z-index: -3;
 }
-.bg:before {
+.bin-bg:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -49,7 +49,7 @@
         opacity: 0.5;
     }
 }
-.star-field {
+.bin-estrelas {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@
     -webkit-perspective: 600px;
     z-index: -1;
 }
-.star-field .layer {
+.bin-estrelas .bin-camada {
     box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc, -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7, 758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke, 183px 389px #c7c7c7,
         524px -237px #f0f0f0, 679px -535px #e3e3e3, 158px 399px #ededed, 157px 249px #ededed, 81px -450px #ebebeb, 719px -360px #c2c2c2, -499px 473px #e8e8e8, -158px -349px #d4d4d4, 870px -134px #cfcfcf, 446px 404px #c2c2c2,
         440px 490px #d4d4d4, 414px 507px #e6e6e6, -12px 246px #fcfcfc, -384px 369px #e3e3e3, 641px -413px #fcfcfc, 822px 516px #dbdbdb, 449px 132px #c2c2c2, 727px 146px #f7f7f7, -315px -488px #e6e6e6, 952px -70px #e3e3e3,
@@ -78,13 +78,13 @@
     width: 4px;
     border-radius: 2px;
 }
-.star-field .layer:nth-child(1) {
+.bin-estrelas .bin-camada:nth-child(1) {
     animation: sf-fly-by-1 5s linear infinite;
 }
-.star-field .layer:nth-child(2) {
+.bin-estrelas .bin-camada:nth-child(2) {
     animation: sf-fly-by-2 5s linear infinite;
 }
-.star-field .layer:nth-child(3) {
+.bin-estrelas .bin-camada:nth-child(3) {
     animation: sf-fly-by-3 5s linear infinite;
 }
 
@@ -133,18 +133,23 @@
     background-color: rgb(123, 0, 255);
 	transition: 0.7s
 } */
-.meenu ul li a::after{
+.menu ul li a::after{
     margin: 2px;
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background: rgb(123, 0, 255);
-    transition: width .3s;
+    transition: width .6s;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+    transition: width 0.8s;
 }
 
 /*sub menu*/
-.menu ul ul {
+/* .menu ul ul {
     display: none;
     left: 0;
     position: absolute;
@@ -160,7 +165,7 @@
 
 .menu ul ul li a {
     display: block;
-}
+} */
 
 /* Sobre */
 
@@ -169,10 +174,8 @@
 }
 
 #bin-inicio:hover, #bin-sobre:hover, #bin-resumo:hover, #bin-portifolio:hover, #bin-contato:hover{
-    font-size: 25px;
-    transition: 0.3s;
     cursor: pointer;
-    border-bottom: solid 2px purple;
+    color: #fff;
 }
 
 .bin-info li{
@@ -212,6 +215,7 @@
 .bin-tot-info h1{
     font-size: 36px;
     font-weight: bold;
+    margin: 10px;
 }
 /*Conteudo*/
 
@@ -272,16 +276,32 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: #8844ff;
+    /* color: #8844ff; */
     padding-bottom: 10px;
+    animation: bin-cor 3s infinite;
 }
+
+
+  @keyframes bin-cor {
+    0% {
+      color: #8844ff;
+    }
+    50% {
+      color: #a483dd;
+    }
+    100% {
+      color: #8844ff;
+    }
+  }
+
 .bin-layout p {
     color: white;
 }
+
 /* rodapé */
 footer {
 	text-align: center;
-	background: rgb(57, 13, 13);
+	background-color: rgb(0 0 0 / 89%);
 	padding: 20px 0;
 }
 
