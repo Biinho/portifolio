@@ -179,7 +179,8 @@
 /*Conteudo*/
 
 .bin-conteudo{
-    padding-top: 60px
+    padding-top: 60px;
+    font-family: "Poppins",sans-serif;
 }
 
 .bin-layout{
@@ -197,6 +198,12 @@
     font-weight: bold;
 }
 
+#bin-sub-m-titulo{
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 #bin-m-titulo::after{
     content: "";
     width: 120px;
@@ -206,11 +213,32 @@
     margin: 4px 10px;
 }
 
-#bin-titulo{
-    font-size: 20px;
-    color: #673AB7;
+#bin-sub-m-titulo::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #673AB7;
+    margin: 4px 10px;
 }
 
+#bin-titulo{
+    margin: 17px 0 20px 0;
+    font-size: 33px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#bin-titulo2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #673AB7;
+    padding-bottom: 10px;
+}
+.bin-layout p {
+    color: white;
+}
 /* rodapé */
 footer {
 	text-align: center;
