@@ -298,6 +298,43 @@
     color: white;
 }
 
+/* Porcentagens de skills*/
+
+* {box-sizing: border-box}
+
+.bin-container-skills {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  height: 10px;
+  color: white;
+  font-size: 11px;
+}
+
+.html {width: 90%; background-color: #8844ff;}
+.css {width: 80%; background-color: #8844ff;}
+.js {width: 65%; background-color: #8844ff;}
+.php {width: 60%; background-color: #8844ff;}
+
+#bin-skills-bar p{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#bin-skills-bar{
+    display: flex;
+}
+
+#bin-skills-divf{
+    flex: 1;
+    margin: 10px;
+}
+
 /* rodapé */
 footer {
 	text-align: center;
