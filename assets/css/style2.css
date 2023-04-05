@@ -314,10 +314,14 @@
     font-size: 16px;
 }
 
-.html {width: 90%; background-color: #8844ff;}
-.css {width: 80%; background-color: #8844ff;}
-.js {width: 65%; background-color: #8844ff;}
-.php {width: 60%; background-color: #8844ff;}
+.html {width: 92%; background-color: #8844ff;}
+.node {width: 64%; background-color: #8844ff;}
+.framejs {width: 77%; background-color: #8844ff;}
+.sql {width: 68%; background-color: #8844ff;}
+.js {width: 87%; background-color: #8844ff;}
+.vb {width: 66%; background-color: #8844ff;}
+.py {width: 59%; background-color: #8844ff;}
+.lua {width: 91%; background-color: #8844ff;}
 
 #bin-skills-bar p{
     padding-top: 7px;
